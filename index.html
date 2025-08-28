@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Power Washing</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" href="/logo/logo.jpg" type="image/x-icon" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+
+    <body>
+
+        <div class = "overlay" id = "overlay">
+            <div class = "modal" id = "modal">
+                <p id = "modal-text" class = "button-font"></p>
+                <div class = "heart"></div>
+            </div>
+        </div>
+
+        
+        <!-- Header for the webpage. will stay at the top for the entire time of page -->
+        <div class = "header"> 
+            <div id = "title">
+                <a href = "index.html">
+                    <img id = "image" src = "/logo/logo.jpg" alt = "Company logo">
+                </a>
+                <h1 id = "title">Super Wash Bros</h1>
+            </div>
+
+            <a href = "#id-who-we-are">
+                <h2 class = "header_services">About Us</h2>
+            </a>
+
+            <a href = "#id-about">
+                <h2 class = "header_services">Services</h2>
+            </a>
+            <a href = "#request-quote">
+                <button>Request a Quote</button>
+            </a>
+        </div>
+
+
+        <div class = "container">
+
+            <div class = "dark-mode">
+                <button id = "darkmode" >Toggle Dark Mode</button>
+            </div>
+
+            <!-- front of landing page. Displays image, quick slogan, learn more button-->
+            <div class = "welcome">
+
+                <img  id = "front-image" src = "/results/front-image.jpeg">
+                <div class = "welcome_title">
+                    <h2>Super Clean.</h2>
+                    <h2>Super Fast.</h2>
+                    <h2>Super Wash Bros.</h2>
+                    
+                    <div class = "learn-more">
+                        <button onclick = scrollPage()>Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id = "id-who-we-are" class = "who-we-are">
+                <div class = "who-we-are-title">
+                    <h2>Who We Are</h2>
+                </div>
+
+                <div class = "who-we-are-boxes">
+                    <div class = "who-we-are-box">
+                        <h2>Our Story</h2>
+                        <p class = "button-font">Super Wash Bros was founded in 2023 by two brothers and their pops with one simple goal: to bring homes back to life with powerful, professional cleaning. What started as a weekend project quickly turned into a passion. We realized just how much a clean driveway or sparkling siding could transform not just a home’s appearance, but how people feel about where they live.
+                        <br><br>We specialize in house washing and driveway cleaning, using top-quality equipment and a commitment to care like it’s our own property. As a family-owned business, trust, reliability, and attention to detail are at the heart of everything we do. Whether it’s your first wash or part of regular upkeep, we’re here to help your home shine.</p>
+                    </div>
+
+                    <div class = "who-we-are-box">
+                        <h2>Our Expertise</h2>
+                        <p class = "button-font">Our experienced team specializes in residential and commercial power washing, including driveways, sidewalks, decks, patios, building exteriors, and more. We use state-of-the-art equipment and eco-friendly cleaning solutions to ensure safe, effective results.
+                        <br><br>With years of experience and hundreds of satisfied customers, we've mastered the art of pressure washing. We know the right techniques, pressures, and cleaning agents for every surface type, ensuring no damage while achieving maximum cleanliness.</p>
+                    </div>
+                </div>
+            </div>
+    
+
+            <!-- About section. Words, possible pictures -->
+            <div id = "id-about" class = "about">
+                <div  class = "about-title">
+                    <h2 id = "what-we-do">What We Offer</h2>
+                </div>
+            
+                <!-- What the company has to offer, with before/after images-->
+                <div class = "sections">
+                    <div class = "cards">
+                        <div class = "card">
+                            <img class = "result" src = "/results/before1.jpg" alt = "before image">
+                            <img class = "result" src = "/results/after1.jpg" alt = "after image">
+                        </div>
+
+                        <div class = "card">
+                            <img class = "result" src = "/results/before2.jpg" alt = "before image">
+                            <img class = "result" src = "/results/after2.jpg" alt = "after image">
+                        </div>
+
+                        <div class = "card">
+                            <img class = "result" src = "/results/before3.jpg">
+                            <img class = "result" src = "/results/after3.jpg">
+                        </div>
+                    </div>
+
+
+                    <div class = "about-description">
+                        <div class = "about-sections">
+                            <h2>House Washing and Driveway Cleaning </h2>
+                            <p class = "button-font">Complete exterior house cleaning including siding, brick, stucco, and more. We also remove oil stains, dirt, and grime from concrete, asphalt, and paver driveways.</p>
+                        </div>
+
+                        <div class = "about-sections">
+                            <h2>Flexible Scheduling</h2>
+                            <p class = "button-font">We know your time is valuable. That’s why we offer convenient, flexible appointment slots — including evenings and weekends — to fit your schedule, not the other way around.</p>
+                        </div>
+
+                        <div class = "about-sections">
+                            <h2>Free Quotes</h2>
+                            <p id = "request-quote" class = "button-font">Know exactly what to expect! We provide fast, honest, and completely free quotes for all our services. Whether it's your driveway, siding, or full property, we'll assess your needs and give you a clear, upfront estimate at no cost.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "form">
+                <div class = "form-title">
+                    <h2>Request a Quote</h2>
+                </div>
+
+                <div class = "form-description">
+                    <div class = "paragraph-section">
+                        <p class = "button-font">
+                            Ready to bring your home or business back to life with a sparkling clean? At Super Wash Bros, we make it easy. Just tell us a bit about your project, and we'll get back to you quickly with a free, no-obligation quote. <br> <br>
+                            Whether it's siding, driveways, decks, fences, or commercial properties, no job is too big or small. We offer competitive pricing, professional service, and results you’ll love. 
+                        </p>
+                    </div>
+
+                    <div id = "rsvp-quotes" class = "rsvp-quotes">
+                        <p class = "button-font">
+                            🧼 Ryan submitted a free quote!
+                        </p>
+                        <p class = "button-font">
+                            🫧 Erin submitted a free quote!
+                        </p>
+                    </div>
+                </div>
+
+
+                <form id = "quote-form" class = "quote_form">
+                        <input id = "quote-name" type = "text" placeholder = "Name">
+                        <input id = "email-name" type = "text" placeholder = "Email">
+                        <input id = "quote-description-form" type = "text" placeholder = "Description of Job">
+                        <button type = "submit" id = "submit_quote_button" >Submit Request</button>
+                </form>
+            
+
+            </div>
+        </div>
+
+        <!-- Always stays at bottom, includes contact information, links, etc.-->
+        <div class = "footer">
+                <div class = "footer-section">
+                    <h2>Contact Us</h2>
+                    <h5>+1(571)-222-3424</h5>
+                    <h5>chrispowerwashes@gmail.com</h5>
+                    <h5>Business Hours: Monday-Sat, 8am-6pm </h5>
+                    <h5>Service Area: Town of Leesburg</h5>
+                </div>
+
+                <div class = "footer-section">
+                    <h2>Quick Links</h2>
+                    <h5>Before & After Gallery</h5>
+                    <h5>Request a Quote</h5>
+                    
+                </div>
+        </div>
+
+        <!-- Also stays at bottom -->
+        <div class = "rights-reserved">
+            <p><i class="fa-regular fa-copyright"></i> 2025 Super Wash Bros. All Rights Reserved.</p>
+        </div>
+
+        
+        <script src="script.js"></script>
+    </body>
+</html>
